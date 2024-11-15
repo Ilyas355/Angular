@@ -1,0 +1,67 @@
+
+
+<form class="form" action="./" method="get">
+  <div class="form_input">
+    <br /><br />
+    <div class="inner-container">
+      <span class="label-container">
+        <label for="GivenName" class="form_label">Name:</label>
+      </span>
+      <span class="input-container">
+        <input
+          type="text"
+          name="GivenName"
+          id="GivenName"
+          placeholder="Enter Your Name"
+          size="24"
+          (blur)="onBlurCheckName()"
+        />
+      </span>
+      <br /><br />
+    </div>
+  </div>
+  <div class="form_input">
+    <div class="inner-container">
+      <span class="label-container">
+        <label for="GivenEmail" class="form_label">Email:</label>
+      </span>
+      <span class="input-container">
+        <input
+          type="email"
+          name="GivenEmail"
+          id="GivenEmail"
+          placeholder="Enter Your Email"
+          size="24"
+        />
+      </span>
+    </div>
+    <br />
+  </div>
+  <div class="form_input">
+    <div class="inner-container">
+      <span class="label-container">
+        <label for="GivenCardNum" class="form_label">Card:</label>
+      </span>
+
+      <span class="input-container">
+        <input
+          type="password"
+          name="GivenCardNum"
+          id="GivenCardNum"
+          placeholder="Enter a Proxy Credit Card Number."
+          (blur)="onBlurCheckCard()"
+          size="24"
+        />
+      </span>
+      <br />
+    </div>
+  </div>
+  <div class="form_input btn-container">
+    <button type="submit" id="submit">Submit</button>
+  </div>
+</form>
+
+
+
+
+<router-outlet />
